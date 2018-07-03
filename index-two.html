@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Bulma!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <style type="text/css">
+
+      .is-paddingless-horizontal {
+        padding-right: 0; padding-left: 0;
+      }
+
+      .grid {
+        --gutter: 1.5rem;
+
+        display: grid;
+        grid-template-columns:
+          [xl-start] 1fr var(--gutter) [md-start] minmax(0, 624px) [md-end] var(--gutter) 1fr [xl-end];
+      }
+
+      .grid * {
+        grid-column: 3/4;
+      }
+
+      .grid-xl {
+        grid-column: 'xl';
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .circle {
+        border-radius: 50% ;
+      }
+      .img {
+        height: 4rem !important;
+      }
+      .is-justify {
+        text-align: justify;
+      }
+
+      @media (max-width: 672px) {
+        :root {
+          font-size: 90%;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+
+  <section class="section is-paddingless-horizontal">
+    <div class="container grid">
+      <nav class="breadcrumb grid-xl" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="is-active"><a href="#" aria-current="page"> How to build a beautiful blog</a></li>
+        </ul>
+      </nav>
+  </section>
+
+  <!-- -------------------------------------------------------------- -->
+    <!-- -------------------------------------------------------------- -->
+      <!-- -------------------------------------------------------------- -->
+        <!-- -------------------------------------------------------------- -->
+            <!-- -------------------------------------------------------------- -->
+
+  <section class="section is-paddingless-horizontal">
+    <div class="container grid">
+      <article class="media center">
+        <figure class="media-left">
+          <figure class="image is-64x64">
+            <img src="images/bg.jpg" class="circle img card">
+          </figure>
+        </figure>
+        <div class="media-content">
+          <div class="content">
+            <p>
+              <strong>Savanna Larson</strong>
+              <a> @savannalarson</a><br>
+              <span class="has-text-grey"> Self taught, inspired to learn <br>
+              <time datetime="2018-06-02">Jun 04</time> ° 20min read</span>
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <div class="section is-paddingless-horizontal">
+        <h1 class="title is-3"> How to build a beautiful blog</h1>
+        <h2 class="subtitle is-4 has-text-grey"> Learn from first-principles</h2>
+      </div>
+
+      <figure class="columns is-mobile is-variable is-1 grid-xl is-marginless">
+        <div class="column">
+          <figure class="image card">
+            <img src="images/markus.jpg">
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="image card">
+            <img src="images/safal.jpg">
+          </figure>
+        </div>
+        <div class="column">
+          <figure class="image card">
+            <img src="images/tomasz.jpg">
+          </figure>
+        </div>
+      </figure>
+      <figcaption class="level">
+        <small class="level-item has-text-grey">
+          The blog we'll build. Click to continue to Scrimba
+        </small>
+      </figcaption>
+
+      <div class="content is-medium is-justify">
+       <p>
+          Exercitation in sed nostrud fugiat ut in esse culpa qui irure dolore exercitation labore et in ad dolor dolor id amet commodo <strong>sed velit dolor reprehenderit exercitation</strong> ex velit ad fugiat ut ullamco magna ex magna deserunt nostrud sunt.
+       </p>
+       <p> Lorem ipsum exercitation minim velit consequat aliqua ullamco et duis dolor ut qui reprehenderit ut laboris cillum esse voluptate voluptate mollit cillum commodo ut elit irure ea reprehenderit duis est duis incididunt ex enim sit id officia elit irure labore dolor excepteur qui in duis culpa sit ut in dolor velit in in laborum consequat eu commodo sint tempor magna ullamco dolore magna ut ea eu exercitation non excepteur in eu exercitation sint consequat magna nostrud incididunt cupidatat fugiat adipisicing adipisicing nulla dolor magna occaecat aliquip laboris sint pariatur anim dolor cupidatat proident minim laborum magna cupidatat ex consequat qui sint quis voluptate ullamco eu cillum ad excepteur mollit do laboris pariatur in cillum ea eu dolore mollit id quis adipisicing proident eu eiusmod labore quis aute enim veniam in dolore sunt dolore in.</p>
+       <p>
+          Magna ut ea eu exercitation non excepteur in eu exercitation sint consequat magna nostrud incididunt cupidatat fugiat adipisicing adipisicing nulla dolor magna occaecat aliquip laboris sint pariatur anim dolor cupidatat proident minim laborum magna cupidatat ex consequat qui sint quis voluptate ullamco eu cillum ad excepteur mollit do laboris pariatur in cillum ea eu dolore mollit id quis adipisicing proident eu eiusmod labore quis aute enim veniam in dolore sunt dolore in.
+       </p>
+
+      </div>
+
+    </div>
+  </section>
+  </body>
+</html>
